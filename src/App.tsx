@@ -1,13 +1,13 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { TodoItemsList } from './TodoItems';
 import { TodoItemsContextProvider } from './TodoItemsContext';
 import TodoItemForm from './TodoItemForm';
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette: {
         primary: {
             main: '#9012fe',

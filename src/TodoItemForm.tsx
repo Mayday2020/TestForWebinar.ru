@@ -50,7 +50,7 @@ export default function TodoItemForm() {
                     />
                 )}
             />
-            <Controller
+            {/*<Controller
                 name="tags"
                 control={control}
                 defaultValue=""
@@ -63,7 +63,7 @@ export default function TodoItemForm() {
                         className={classes.root}
                     />
                 )}
-            />
+            />*/}
             <Button
                 variant="contained"
                 color="primary"
@@ -72,6 +72,7 @@ export default function TodoItemForm() {
             >
                 Add
             </Button>
+
         </form>
     );
 }

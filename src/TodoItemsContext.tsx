@@ -64,17 +64,17 @@ export const TodoItemsContextProvider = ({
 
     useEffect(() => {
         const savedState = localStorage.getItem(localStorageKey);
-
         if (savedState) {
             try {
-                debugger
                 dispatch({ type: 'loadState', data: JSON.parse(savedState) });
             } catch {}
         }
     }, []);
 
+
     useEffect(() => {
         localStorage.setItem(localStorageKey, JSON.stringify(state));
+        console.log('123')
     }, [state]);
 
     return (
